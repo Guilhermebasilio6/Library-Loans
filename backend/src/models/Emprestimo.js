@@ -1,10 +1,11 @@
 const sequelize = require("../config/database");
-const { DataTypes } = sequelize;
+const { DataTypes } = require("sequelize");
 
 const Emprestimo = sequelize.define("Emprestimo", {
   dataEmprestimo: {
     type: DataTypes.DATEONLY,
     allow: false,
+    allowNull: false,
   },
   dataDevolucaoPrevista: {
     type: DataTypes.DATEONLY,

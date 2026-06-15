@@ -10,10 +10,6 @@ const Livro = sequelize.define("Livro", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  autor: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
   categoria: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -29,7 +25,7 @@ const Livro = sequelize.define("Livro", {
     allowNull: false,
     defaultValue: 1,
   },
-  sinope: {
+  sinopse: {
     type: DataTypes.TEXT,
   },
   ativo: {

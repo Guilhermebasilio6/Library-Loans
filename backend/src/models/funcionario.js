@@ -1,31 +1,30 @@
-const { DataTypes } = require('sequelize')
-const sequelize = require('../config/database')
-
+const { DataTypes } = require("sequelize");
+const sequelize = require("../config/database");
 
 // Login de funcionarios (admin e bibliotecário)
 
-const Funcionario = sequelize.define('Funcionario', {
+const Funcionario = sequelize.define("Funcionario", {
   nome: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
   },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true
+    unique: true,
   },
   senha_hash: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
   },
   perfil: {
-    type: DataTypes.ENUM('admin', 'bibliotecario'),
-    allowNull: false
+    type: DataTypes.ENUM("admin", "bibliotecario"),
+    allowNull: false,
   },
   status: {
     type: DataTypes.BOOLEAN,
-    defaultValue: true
-  }
-})
+    defaultValue: true,
+  },
+});
 
-module.exports = Funcionario
+module.exports = Funcionario;

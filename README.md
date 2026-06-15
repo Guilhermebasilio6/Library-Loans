@@ -1,2 +1,2 @@
 # projetods
-Projeto acadêmico da disciplina "Desenvolvimento Web" do Senai
+Projeto acadêmico da disciplina "Desenvolvimento de sistemas" do Senai
